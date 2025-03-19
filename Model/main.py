@@ -27,6 +27,64 @@ def clean_data(df):
 
 clean_data(df)
 
+# Team name mapping to match cbb.csv dataset names
+TEAM_NAME_MAPPING = {
+    'Ole Miss': 'Mississippi',
+    'SDSU/UNC': 'North Carolina',  # Taking UNC for play-in
+    'AU/Mount': 'American',  # Taking American for play-in
+    'Saint Mary\'s': 'Saint Marys',
+    'UConn': 'Connecticut',
+    'UNC Wilmington': 'UNC-Wilmington',
+    'Norfolk St': 'Norfolk State',
+    'Colorado St': 'Colorado State',
+    'Alabama St': 'Alabama State',
+    'St. John\'s': 'St Johns'
+}
+
+# Updated 2025 NCAA Tournament Bracket
+BRACKET_2025 = {
+    'South': [
+        ('Auburn', 1), ('Alabama State', 16),
+        ('Louisville', 8), ('Creighton', 9),
+        ('Michigan', 5), ('UC San Diego', 12),
+        ('Texas A&M', 4), ('Yale', 13),
+        ('Mississippi', 6), ('North Carolina', 11),
+        ('Iowa State', 3), ('Lipscomb', 14),
+        ('Marquette', 7), ('New Mexico', 10),
+        ('Michigan State', 2), ('Bryant', 15)
+    ],
+    'East': [
+        ('Duke', 1), ('American', 16),
+        ('Mississippi State', 8), ('Baylor', 9),
+        ('Oregon', 5), ('Liberty', 12),
+        ('Arizona', 4), ('Akron', 13),
+        ('BYU', 6), ('VCU', 11),
+        ('Wisconsin', 3), ('Montana', 14),
+        ('Saint Marys', 7), ('Vanderbilt', 10),
+        ('Alabama', 2), ('Robert Morris', 15)
+    ],
+    'Midwest': [
+        ('Houston', 1), ('SIU Edwardsville', 16),
+        ('Gonzaga', 8), ('Georgia', 9),
+        ('Clemson', 5), ('McNeese', 12),
+        ('Purdue', 4), ('High Point', 13),
+        ('Illinois', 6), ('Xavier', 11),
+        ('Kentucky', 3), ('Troy', 14),
+        ('UCLA', 7), ('Utah State', 10),
+        ('Tennessee', 2), ('Wofford', 15)
+    ],
+    'West': [
+        ('Florida', 1), ('Norfolk State', 16),
+        ('Connecticut', 8), ('Oklahoma', 9),
+        ('Memphis', 5), ('Colorado State', 12),
+        ('Maryland', 4), ('Grand Canyon', 13),
+        ('Missouri', 6), ('Drake', 11),
+        ('Texas Tech', 3), ('UNC-Wilmington', 14),
+        ('Kansas', 7), ('Arkansas', 10),
+        ('St Johns', 2), ('Omaha', 15)
+    ]
+}
+
 # Create more comprehensive rating based on team stats
 def calculate_team_rating(row):
     # Offensive rating components
@@ -144,41 +202,31 @@ tourney_df = current_tourney_teams[['TEAM','SEED','Sweet16_Prob']].copy()
 
 # Setup proper tournament bracket structure
 def create_tournament_bracket(df):
-    """Create proper NCAA tournament bracket with 4 regions"""
-    # Sort by seed and rating
-    df_sorted = df.sort_values(['SEED', 'RATING'], ascending=[True, False])
-    
-    # Define regions and their seeding order
-    regions = ['East', 'West', 'South', 'Midwest']
-    # NCAA tournament seeding pattern for each region
-    seed_pattern = [1,16,8,9,5,12,4,13,6,11,3,14,7,10,2,15]
-    
+    """Create tournament bracket using predefined 2025 teams"""
     bracket = []
-    used_teams = set()
     
-    for region in regions:
-        regional_seeds = []
-        for seed in seed_pattern:
-            # Get teams with current seed that haven't been used yet
-            available_teams = df_sorted[
-                (df_sorted['SEED'] == seed) & 
-                ~df_sorted['TEAM'].isin(used_teams)
-            ]
+    # Create a mapping of standardized team names
+    team_mapping = {**TEAM_NAME_MAPPING}
+    
+    for region, teams in BRACKET_2025.items():
+        for team, seed in teams:
+            # Get standardized team name
+            std_team = team_mapping.get(team, team)
             
-            if len(available_teams) == 0:
-                print(f"Warning: No available teams for seed {seed} in {region}")
-                continue
-                
-            team = available_teams.iloc[0]
-            used_teams.add(team['TEAM'])
+            # Get team stats from dataset
+            team_data = df[df['TEAM'].str.lower() == std_team.lower()]
+            if len(team_data) == 0:
+                print(f"Warning: No data found for {std_team}, using average stats for seed {seed}")
+                rating = df[df['SEED'] == seed]['RATING'].mean()
+            else:
+                rating = team_data.iloc[0]['RATING']
             
-            regional_seeds.append({
-                'team': team['TEAM'],
+            bracket.append({
+                'team': std_team,
                 'seed': seed,
-                'rating': team['RATING'],
+                'rating': rating,
                 'region': region
             })
-        bracket.extend(regional_seeds)
     
     return pd.DataFrame(bracket)
 
