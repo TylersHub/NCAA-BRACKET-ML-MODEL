@@ -1,0 +1,7 @@
+.env
+.myenv
+.csv
+myenv/
+.vscode/
+.class
+.pyc

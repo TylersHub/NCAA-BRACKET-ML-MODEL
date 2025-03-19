@@ -1,0 +1,637 @@
+// NCAA Tournament Bracket
+digraph {
+	rankdir=LR
+	node [fillcolor=white shape=box style="rounded,filled"]
+	"Round of 64_Gonzaga_1" [label="(1) Gonzaga
+[0.566]" fillcolor=white]
+	"Round of 64_Penn_16" [label="(16) Penn
+[0.434]" fillcolor=lightgreen]
+	"Round of 64_winner_Penn" [label="" style=invis]
+	"Round of 64_Gonzaga_1" -> "Round of 64_winner_Penn"
+	"Round of 64_Penn_16" -> "Round of 64_winner_Penn"
+	"Round of 64_winner_Penn" -> "Round of 32_Penn_16"
+	"Round of 64_Pittsburgh_8" [label="(8) Pittsburgh
+[0.504]" fillcolor=white]
+	"Round of 64_Oklahoma St._9" [label="(9) Oklahoma St.
+[0.496]" fillcolor=lightgreen]
+	"Round of 64_winner_Oklahoma St." [label="" style=invis]
+	"Round of 64_Pittsburgh_8" -> "Round of 64_winner_Oklahoma St."
+	"Round of 64_Oklahoma St._9" -> "Round of 64_winner_Oklahoma St."
+	"Round of 64_winner_Oklahoma St." -> "Round of 32_Oklahoma St._9"
+	"Round of 64_Houston_5" [label="(5) Houston
+[0.530]" fillcolor=white]
+	"Round of 64_Harvard_12" [label="(12) Harvard
+[0.470]" fillcolor=lightgreen]
+	"Round of 64_winner_Harvard" [label="" style=invis]
+	"Round of 64_Houston_5" -> "Round of 64_winner_Harvard"
+	"Round of 64_Harvard_12" -> "Round of 64_winner_Harvard"
+	"Round of 64_winner_Harvard" -> "Round of 32_Harvard_12"
+	"Round of 64_Louisville_4" [label="(4) Louisville
+[0.540]" fillcolor=white]
+	"Round of 64_Vermont_13" [label="(13) Vermont
+[0.460]" fillcolor=lightgreen]
+	"Round of 64_winner_Vermont" [label="" style=invis]
+	"Round of 64_Louisville_4" -> "Round of 64_winner_Vermont"
+	"Round of 64_Vermont_13" -> "Round of 64_winner_Vermont"
+	"Round of 64_winner_Vermont" -> "Round of 32_Vermont_13"
+	"Round of 64_SMU_6" [label="(6) SMU
+[0.518]" fillcolor=lightgreen]
+	"Round of 64_Wichita St._11" [label="(11) Wichita St.
+[0.482]" fillcolor=white]
+	"Round of 64_winner_SMU" [label="" style=invis]
+	"Round of 64_SMU_6" -> "Round of 64_winner_SMU"
+	"Round of 64_Wichita St._11" -> "Round of 64_winner_SMU"
+	"Round of 64_winner_SMU" -> "Round of 32_SMU_6"
+	"Round of 64_Florida_3" [label="(3) Florida
+[0.545]" fillcolor=lightgreen]
+	"Round of 64_Stephen F. Austin_14" [label="(14) Stephen F. Austin
+[0.455]" fillcolor=white]
+	"Round of 64_winner_Florida" [label="" style=invis]
+	"Round of 64_Florida_3" -> "Round of 64_winner_Florida"
+	"Round of 64_Stephen F. Austin_14" -> "Round of 64_winner_Florida"
+	"Round of 64_winner_Florida" -> "Round of 32_Florida_3"
+	"Round of 64_Saint Mary's_7" [label="(7) Saint Mary's
+[0.512]" fillcolor=white]
+	"Round of 64_Ohio St._10" [label="(10) Ohio St.
+[0.488]" fillcolor=lightgreen]
+	"Round of 64_winner_Ohio St." [label="" style=invis]
+	"Round of 64_Saint Mary's_7" -> "Round of 64_winner_Ohio St."
+	"Round of 64_Ohio St._10" -> "Round of 64_winner_Ohio St."
+	"Round of 64_winner_Ohio St." -> "Round of 32_Ohio St._10"
+	"Round of 64_Villanova_2" [label="(2) Villanova
+[0.555]" fillcolor=lightgreen]
+	"Round of 64_Georgia St._15" [label="(15) Georgia St.
+[0.445]" fillcolor=white]
+	"Round of 64_winner_Villanova" [label="" style=invis]
+	"Round of 64_Villanova_2" -> "Round of 64_winner_Villanova"
+	"Round of 64_Georgia St._15" -> "Round of 64_winner_Villanova"
+	"Round of 64_winner_Villanova" -> "Round of 32_Villanova_2"
+	"Round of 64_Kentucky_1" [label="(1) Kentucky
+[0.569]" fillcolor=white]
+	"Round of 64_Southern_16" [label="(16) Southern
+[0.431]" fillcolor=lightgreen]
+	"Round of 64_winner_Southern" [label="" style=invis]
+	"Round of 64_Kentucky_1" -> "Round of 64_winner_Southern"
+	"Round of 64_Southern_16" -> "Round of 64_winner_Southern"
+	"Round of 64_winner_Southern" -> "Round of 32_Southern_16"
+	"Round of 64_Loyola Chicago_8" [label="(8) Loyola Chicago
+[0.505]" fillcolor=white]
+	"Round of 64_UCF_9" [label="(9) UCF
+[0.495]" fillcolor=lightgreen]
+	"Round of 64_winner_UCF" [label="" style=invis]
+	"Round of 64_Loyola Chicago_8" -> "Round of 64_winner_UCF"
+	"Round of 64_UCF_9" -> "Round of 64_winner_UCF"
+	"Round of 64_winner_UCF" -> "Round of 32_UCF_9"
+	"Round of 64_Utah_5" [label="(5) Utah
+[0.529]" fillcolor=lightgreen]
+	"Round of 64_Oregon_12" [label="(12) Oregon
+[0.471]" fillcolor=white]
+	"Round of 64_winner_Utah" [label="" style=invis]
+	"Round of 64_Utah_5" -> "Round of 64_winner_Utah"
+	"Round of 64_Oregon_12" -> "Round of 64_winner_Utah"
+	"Round of 64_winner_Utah" -> "Round of 32_Utah_5"
+	"Round of 64_Connecticut_4" [label="(4) Connecticut
+[0.538]" fillcolor=lightgreen]
+	"Round of 64_La Salle_13" [label="(13) La Salle
+[0.462]" fillcolor=white]
+	"Round of 64_winner_Connecticut" [label="" style=invis]
+	"Round of 64_Connecticut_4" -> "Round of 64_winner_Connecticut"
+	"Round of 64_La Salle_13" -> "Round of 64_winner_Connecticut"
+	"Round of 64_winner_Connecticut" -> "Round of 32_Connecticut_4"
+	"Round of 64_Cincinnati_6" [label="(6) Cincinnati
+[0.517]" fillcolor=white]
+	"Round of 64_Vanderbilt_11" [label="(11) Vanderbilt
+[0.483]" fillcolor=lightgreen]
+	"Round of 64_winner_Vanderbilt" [label="" style=invis]
+	"Round of 64_Cincinnati_6" -> "Round of 64_winner_Vanderbilt"
+	"Round of 64_Vanderbilt_11" -> "Round of 64_winner_Vanderbilt"
+	"Round of 64_winner_Vanderbilt" -> "Round of 32_Vanderbilt_11"
+	"Round of 64_Texas Tech_3" [label="(3) Texas Tech
+[0.545]" fillcolor=lightgreen]
+	"Round of 64_Colgate_14" [label="(14) Colgate
+[0.455]" fillcolor=white]
+	"Round of 64_winner_Texas Tech" [label="" style=invis]
+	"Round of 64_Texas Tech_3" -> "Round of 64_winner_Texas Tech"
+	"Round of 64_Colgate_14" -> "Round of 64_winner_Texas Tech"
+	"Round of 64_winner_Texas Tech" -> "Round of 32_Texas Tech_3"
+	"Round of 64_Michigan_7" [label="(7) Michigan
+[0.513]" fillcolor=lightgreen]
+	"Round of 64_Marquette_10" [label="(10) Marquette
+[0.487]" fillcolor=white]
+	"Round of 64_winner_Michigan" [label="" style=invis]
+	"Round of 64_Michigan_7" -> "Round of 64_winner_Michigan"
+	"Round of 64_Marquette_10" -> "Round of 64_winner_Michigan"
+	"Round of 64_winner_Michigan" -> "Round of 32_Michigan_7"
+	"Round of 64_Arizona_2" [label="(2) Arizona
+[0.555]" fillcolor=lightgreen]
+	"Round of 64_Cal St. Bakersfield_15" [label="(15) Cal St. Bakersfield
+[0.445]" fillcolor=white]
+	"Round of 64_winner_Arizona" [label="" style=invis]
+	"Round of 64_Arizona_2" -> "Round of 64_winner_Arizona"
+	"Round of 64_Cal St. Bakersfield_15" -> "Round of 64_winner_Arizona"
+	"Round of 64_winner_Arizona" -> "Round of 32_Arizona_2"
+	"Round of 64_Duke_1" [label="(1) Duke
+[0.567]" fillcolor=lightgreen]
+	"Round of 64_Drexel_16" [label="(16) Drexel
+[0.433]" fillcolor=white]
+	"Round of 64_winner_Duke" [label="" style=invis]
+	"Round of 64_Duke_1" -> "Round of 64_winner_Duke"
+	"Round of 64_Drexel_16" -> "Round of 64_winner_Duke"
+	"Round of 64_winner_Duke" -> "Round of 32_Duke_1"
+	"Round of 64_Wisconsin_8" [label="(8) Wisconsin
+[0.504]" fillcolor=lightgreen]
+	"Round of 64_Florida Atlantic_9" [label="(9) Florida Atlantic
+[0.496]" fillcolor=white]
+	"Round of 64_winner_Wisconsin" [label="" style=invis]
+	"Round of 64_Wisconsin_8" -> "Round of 64_winner_Wisconsin"
+	"Round of 64_Florida Atlantic_9" -> "Round of 64_winner_Wisconsin"
+	"Round of 64_winner_Wisconsin" -> "Round of 32_Wisconsin_8"
+	"Round of 64_Virginia_5" [label="(5) Virginia
+[0.528]" fillcolor=lightgreen]
+	"Round of 64_Middle Tennessee_12" [label="(12) Middle Tennessee
+[0.472]" fillcolor=white]
+	"Round of 64_winner_Virginia" [label="" style=invis]
+	"Round of 64_Virginia_5" -> "Round of 64_winner_Virginia"
+	"Round of 64_Middle Tennessee_12" -> "Round of 64_winner_Virginia"
+	"Round of 64_winner_Virginia" -> "Round of 32_Virginia_5"
+	"Round of 64_Syracuse_4" [label="(4) Syracuse
+[0.536]" fillcolor=white]
+	"Round of 64_Iona_13" [label="(13) Iona
+[0.464]" fillcolor=lightgreen]
+	"Round of 64_winner_Iona" [label="" style=invis]
+	"Round of 64_Syracuse_4" -> "Round of 64_winner_Iona"
+	"Round of 64_Iona_13" -> "Round of 64_winner_Iona"
+	"Round of 64_winner_Iona" -> "Round of 32_Iona_13"
+	"Round of 64_San Diego St._6" [label="(6) San Diego St.
+[0.516]" fillcolor=white]
+	"Round of 64_Tennessee_11" [label="(11) Tennessee
+[0.484]" fillcolor=lightgreen]
+	"Round of 64_winner_Tennessee" [label="" style=invis]
+	"Round of 64_San Diego St._6" -> "Round of 64_winner_Tennessee"
+	"Round of 64_Tennessee_11" -> "Round of 64_winner_Tennessee"
+	"Round of 64_winner_Tennessee" -> "Round of 32_Tennessee_11"
+	"Round of 64_Notre Dame_3" [label="(3) Notre Dame
+[0.544]" fillcolor=white]
+	"Round of 64_Davidson_14" [label="(14) Davidson
+[0.456]" fillcolor=lightgreen]
+	"Round of 64_winner_Davidson" [label="" style=invis]
+	"Round of 64_Notre Dame_3" -> "Round of 64_winner_Davidson"
+	"Round of 64_Davidson_14" -> "Round of 64_winner_Davidson"
+	"Round of 64_winner_Davidson" -> "Round of 32_Davidson_14"
+	"Round of 64_Michigan St._7" [label="(7) Michigan St.
+[0.512]" fillcolor=lightgreen]
+	"Round of 64_Butler_10" [label="(10) Butler
+[0.488]" fillcolor=white]
+	"Round of 64_winner_Michigan St." [label="" style=invis]
+	"Round of 64_Michigan St._7" -> "Round of 64_winner_Michigan St."
+	"Round of 64_Butler_10" -> "Round of 64_winner_Michigan St."
+	"Round of 64_winner_Michigan St." -> "Round of 32_Michigan St._7"
+	"Round of 64_Purdue_2" [label="(2) Purdue
+[0.554]" fillcolor=lightgreen]
+	"Round of 64_Grand Canyon_15" [label="(15) Grand Canyon
+[0.446]" fillcolor=white]
+	"Round of 64_winner_Purdue" [label="" style=invis]
+	"Round of 64_Purdue_2" -> "Round of 64_winner_Purdue"
+	"Round of 64_Grand Canyon_15" -> "Round of 64_winner_Purdue"
+	"Round of 64_winner_Purdue" -> "Round of 32_Purdue_2"
+	"Round of 64_Indiana_1" [label="(1) Indiana
+[0.566]" fillcolor=lightgreen]
+	"Round of 64_North Carolina Central_16" [label="(16) North Carolina Central
+[0.434]" fillcolor=white]
+	"Round of 64_winner_Indiana" [label="" style=invis]
+	"Round of 64_Indiana_1" -> "Round of 64_winner_Indiana"
+	"Round of 64_North Carolina Central_16" -> "Round of 64_winner_Indiana"
+	"Round of 64_winner_Indiana" -> "Round of 32_Indiana_1"
+	"Round of 64_Memphis_8" [label="(8) Memphis
+[0.505]" fillcolor=white]
+	"Round of 64_St. Bonaventure_9" [label="(9) St. Bonaventure
+[0.495]" fillcolor=lightgreen]
+	"Round of 64_winner_St. Bonaventure" [label="" style=invis]
+	"Round of 64_Memphis_8" -> "Round of 64_winner_St. Bonaventure"
+	"Round of 64_St. Bonaventure_9" -> "Round of 64_winner_St. Bonaventure"
+	"Round of 64_winner_St. Bonaventure" -> "Round of 32_St. Bonaventure_9"
+	"Round of 64_Auburn_5" [label="(5) Auburn
+[0.529]" fillcolor=lightgreen]
+	"Round of 64_Murray St._12" [label="(12) Murray St.
+[0.471]" fillcolor=white]
+	"Round of 64_winner_Auburn" [label="" style=invis]
+	"Round of 64_Auburn_5" -> "Round of 64_winner_Auburn"
+	"Round of 64_Murray St._12" -> "Round of 64_winner_Auburn"
+	"Round of 64_winner_Auburn" -> "Round of 32_Auburn_5"
+	"Round of 64_West Virginia_4" [label="(4) West Virginia
+[0.536]" fillcolor=white]
+	"Round of 64_Hawaii_13" [label="(13) Hawaii
+[0.464]" fillcolor=lightgreen]
+	"Round of 64_winner_Hawaii" [label="" style=invis]
+	"Round of 64_West Virginia_4" -> "Round of 64_winner_Hawaii"
+	"Round of 64_Hawaii_13" -> "Round of 64_winner_Hawaii"
+	"Round of 64_winner_Hawaii" -> "Round of 32_Hawaii_13"
+	"Round of 64_Iowa St._6" [label="(6) Iowa St.
+[0.517]" fillcolor=lightgreen]
+	"Round of 64_Iowa_11" [label="(11) Iowa
+[0.483]" fillcolor=white]
+	"Round of 64_winner_Iowa St." [label="" style=invis]
+	"Round of 64_Iowa St._6" -> "Round of 64_winner_Iowa St."
+	"Round of 64_Iowa_11" -> "Round of 64_winner_Iowa St."
+	"Round of 64_winner_Iowa St." -> "Round of 32_Iowa St._6"
+	"Round of 64_UCLA_3" [label="(3) UCLA
+[0.543]" fillcolor=white]
+	"Round of 64_Valparaiso_14" [label="(14) Valparaiso
+[0.457]" fillcolor=lightgreen]
+	"Round of 64_winner_Valparaiso" [label="" style=invis]
+	"Round of 64_UCLA_3" -> "Round of 64_winner_Valparaiso"
+	"Round of 64_Valparaiso_14" -> "Round of 64_winner_Valparaiso"
+	"Round of 64_winner_Valparaiso" -> "Round of 32_Valparaiso_14"
+	"Round of 64_Creighton_7" [label="(7) Creighton
+[0.513]" fillcolor=lightgreen]
+	"Round of 64_Utah St._10" [label="(10) Utah St.
+[0.487]" fillcolor=white]
+	"Round of 64_winner_Creighton" [label="" style=invis]
+	"Round of 64_Creighton_7" -> "Round of 64_winner_Creighton"
+	"Round of 64_Utah St._10" -> "Round of 64_winner_Creighton"
+	"Round of 64_winner_Creighton" -> "Round of 32_Creighton_7"
+	"Round of 64_Texas_2" [label="(2) Texas
+[0.551]" fillcolor=lightgreen]
+	"Round of 64_Florida Gulf Coast_15" [label="(15) Florida Gulf Coast
+[0.449]" fillcolor=white]
+	"Round of 64_winner_Texas" [label="" style=invis]
+	"Round of 64_Texas_2" -> "Round of 64_winner_Texas"
+	"Round of 64_Florida Gulf Coast_15" -> "Round of 64_winner_Texas"
+	"Round of 64_winner_Texas" -> "Round of 32_Texas_2"
+	"Round of 32_Penn_16" [label="(16) Penn
+[0.469]" fillcolor=white]
+	"Round of 32_Oklahoma St._9" [label="(9) Oklahoma St.
+[0.531]" fillcolor=lightgreen]
+	"Round of 32_winner_Oklahoma St." [label="" style=invis]
+	"Round of 32_Penn_16" -> "Round of 32_winner_Oklahoma St."
+	"Round of 32_Oklahoma St._9" -> "Round of 32_winner_Oklahoma St."
+	"Round of 32_winner_Oklahoma St." -> "Round of 32_Oklahoma St._9"
+	"Round of 32_Harvard_12" [label="(12) Harvard
+[0.504]" fillcolor=white]
+	"Round of 32_Vermont_13" [label="(13) Vermont
+[0.496]" fillcolor=lightgreen]
+	"Round of 32_winner_Vermont" [label="" style=invis]
+	"Round of 32_Harvard_12" -> "Round of 32_winner_Vermont"
+	"Round of 32_Vermont_13" -> "Round of 32_winner_Vermont"
+	"Round of 32_winner_Vermont" -> "Round of 32_Vermont_13"
+	"Round of 32_SMU_6" [label="(6) SMU
+[0.487]" fillcolor=lightgreen]
+	"Round of 32_Florida_3" [label="(3) Florida
+[0.513]" fillcolor=white]
+	"Round of 32_winner_SMU" [label="" style=invis]
+	"Round of 32_SMU_6" -> "Round of 32_winner_SMU"
+	"Round of 32_Florida_3" -> "Round of 32_winner_SMU"
+	"Round of 32_winner_SMU" -> "Round of 32_SMU_6"
+	"Round of 32_Ohio St._10" [label="(10) Ohio St.
+[0.468]" fillcolor=lightgreen]
+	"Round of 32_Villanova_2" [label="(2) Villanova
+[0.532]" fillcolor=white]
+	"Round of 32_winner_Ohio St." [label="" style=invis]
+	"Round of 32_Ohio St._10" -> "Round of 32_winner_Ohio St."
+	"Round of 32_Villanova_2" -> "Round of 32_winner_Ohio St."
+	"Round of 32_winner_Ohio St." -> "Round of 32_Ohio St._10"
+	"Round of 32_Southern_16" [label="(16) Southern
+[0.468]" fillcolor=white]
+	"Round of 32_UCF_9" [label="(9) UCF
+[0.532]" fillcolor=lightgreen]
+	"Round of 32_winner_UCF" [label="" style=invis]
+	"Round of 32_Southern_16" -> "Round of 32_winner_UCF"
+	"Round of 32_UCF_9" -> "Round of 32_winner_UCF"
+	"Round of 32_winner_UCF" -> "Round of 32_UCF_9"
+	"Round of 32_Utah_5" [label="(5) Utah
+[0.496]" fillcolor=lightgreen]
+	"Round of 32_Connecticut_4" [label="(4) Connecticut
+[0.504]" fillcolor=white]
+	"Round of 32_winner_Utah" [label="" style=invis]
+	"Round of 32_Utah_5" -> "Round of 32_winner_Utah"
+	"Round of 32_Connecticut_4" -> "Round of 32_winner_Utah"
+	"Round of 32_winner_Utah" -> "Round of 32_Utah_5"
+	"Round of 32_Vanderbilt_11" [label="(11) Vanderbilt
+[0.468]" fillcolor=white]
+	"Round of 32_Texas Tech_3" [label="(3) Texas Tech
+[0.532]" fillcolor=lightgreen]
+	"Round of 32_winner_Texas Tech" [label="" style=invis]
+	"Round of 32_Vanderbilt_11" -> "Round of 32_winner_Texas Tech"
+	"Round of 32_Texas Tech_3" -> "Round of 32_winner_Texas Tech"
+	"Round of 32_winner_Texas Tech" -> "Round of 32_Texas Tech_3"
+	"Round of 32_Michigan_7" [label="(7) Michigan
+[0.481]" fillcolor=white]
+	"Round of 32_Arizona_2" [label="(2) Arizona
+[0.519]" fillcolor=lightgreen]
+	"Round of 32_winner_Arizona" [label="" style=invis]
+	"Round of 32_Michigan_7" -> "Round of 32_winner_Arizona"
+	"Round of 32_Arizona_2" -> "Round of 32_winner_Arizona"
+	"Round of 32_winner_Arizona" -> "Round of 32_Arizona_2"
+	"Round of 32_Duke_1" [label="(1) Duke
+[0.530]" fillcolor=lightgreen]
+	"Round of 32_Wisconsin_8" [label="(8) Wisconsin
+[0.470]" fillcolor=white]
+	"Round of 32_winner_Duke" [label="" style=invis]
+	"Round of 32_Duke_1" -> "Round of 32_winner_Duke"
+	"Round of 32_Wisconsin_8" -> "Round of 32_winner_Duke"
+	"Round of 32_winner_Duke" -> "Round of 32_Duke_1"
+	"Round of 32_Virginia_5" [label="(5) Virginia
+[0.532]" fillcolor=lightgreen]
+	"Round of 32_Iona_13" [label="(13) Iona
+[0.468]" fillcolor=white]
+	"Round of 32_winner_Virginia" [label="" style=invis]
+	"Round of 32_Virginia_5" -> "Round of 32_winner_Virginia"
+	"Round of 32_Iona_13" -> "Round of 32_winner_Virginia"
+	"Round of 32_winner_Virginia" -> "Round of 32_Virginia_5"
+	"Round of 32_Tennessee_11" [label="(11) Tennessee
+[0.514]" fillcolor=lightgreen]
+	"Round of 32_Davidson_14" [label="(14) Davidson
+[0.486]" fillcolor=white]
+	"Round of 32_winner_Tennessee" [label="" style=invis]
+	"Round of 32_Tennessee_11" -> "Round of 32_winner_Tennessee"
+	"Round of 32_Davidson_14" -> "Round of 32_winner_Tennessee"
+	"Round of 32_winner_Tennessee" -> "Round of 32_Tennessee_11"
+	"Round of 32_Michigan St._7" [label="(7) Michigan St.
+[0.481]" fillcolor=white]
+	"Round of 32_Purdue_2" [label="(2) Purdue
+[0.519]" fillcolor=lightgreen]
+	"Round of 32_winner_Purdue" [label="" style=invis]
+	"Round of 32_Michigan St._7" -> "Round of 32_winner_Purdue"
+	"Round of 32_Purdue_2" -> "Round of 32_winner_Purdue"
+	"Round of 32_winner_Purdue" -> "Round of 32_Purdue_2"
+	"Round of 32_Indiana_1" [label="(1) Indiana
+[0.534]" fillcolor=white]
+	"Round of 32_St. Bonaventure_9" [label="(9) St. Bonaventure
+[0.466]" fillcolor=lightgreen]
+	"Round of 32_winner_St. Bonaventure" [label="" style=invis]
+	"Round of 32_Indiana_1" -> "Round of 32_winner_St. Bonaventure"
+	"Round of 32_St. Bonaventure_9" -> "Round of 32_winner_St. Bonaventure"
+	"Round of 32_winner_St. Bonaventure" -> "Round of 32_St. Bonaventure_9"
+	"Round of 32_Auburn_5" [label="(5) Auburn
+[0.532]" fillcolor=white]
+	"Round of 32_Hawaii_13" [label="(13) Hawaii
+[0.468]" fillcolor=lightgreen]
+	"Round of 32_winner_Hawaii" [label="" style=invis]
+	"Round of 32_Auburn_5" -> "Round of 32_winner_Hawaii"
+	"Round of 32_Hawaii_13" -> "Round of 32_winner_Hawaii"
+	"Round of 32_winner_Hawaii" -> "Round of 32_Hawaii_13"
+	"Round of 32_Iowa St._6" [label="(6) Iowa St.
+[0.531]" fillcolor=lightgreen]
+	"Round of 32_Valparaiso_14" [label="(14) Valparaiso
+[0.469]" fillcolor=white]
+	"Round of 32_winner_Iowa St." [label="" style=invis]
+	"Round of 32_Iowa St._6" -> "Round of 32_winner_Iowa St."
+	"Round of 32_Valparaiso_14" -> "Round of 32_winner_Iowa St."
+	"Round of 32_winner_Iowa St." -> "Round of 32_Iowa St._6"
+	"Round of 32_Creighton_7" [label="(7) Creighton
+[0.484]" fillcolor=lightgreen]
+	"Round of 32_Texas_2" [label="(2) Texas
+[0.516]" fillcolor=white]
+	"Round of 32_winner_Creighton" [label="" style=invis]
+	"Round of 32_Creighton_7" -> "Round of 32_winner_Creighton"
+	"Round of 32_Texas_2" -> "Round of 32_winner_Creighton"
+	"Round of 32_winner_Creighton" -> "Round of 32_Creighton_7"
+	"Sweet 16_Oklahoma St._9" [label="(9) Oklahoma St.
+[0.517]" fillcolor=lightgreen]
+	"Sweet 16_Vermont_13" [label="(13) Vermont
+[0.483]" fillcolor=white]
+	"Sweet 16_winner_Oklahoma St." [label="" style=invis]
+	"Sweet 16_Oklahoma St._9" -> "Sweet 16_winner_Oklahoma St."
+	"Sweet 16_Vermont_13" -> "Sweet 16_winner_Oklahoma St."
+	"Sweet 16_winner_Oklahoma St." -> "Round of 32_Oklahoma St._9"
+	"Sweet 16_SMU_6" [label="(6) SMU
+[0.515]" fillcolor=lightgreen]
+	"Sweet 16_Ohio St._10" [label="(10) Ohio St.
+[0.485]" fillcolor=white]
+	"Sweet 16_winner_SMU" [label="" style=invis]
+	"Sweet 16_SMU_6" -> "Sweet 16_winner_SMU"
+	"Sweet 16_Ohio St._10" -> "Sweet 16_winner_SMU"
+	"Sweet 16_winner_SMU" -> "Round of 32_SMU_6"
+	"Sweet 16_UCF_9" [label="(9) UCF
+[0.482]" fillcolor=white]
+	"Sweet 16_Utah_5" [label="(5) Utah
+[0.518]" fillcolor=lightgreen]
+	"Sweet 16_winner_Utah" [label="" style=invis]
+	"Sweet 16_UCF_9" -> "Sweet 16_winner_Utah"
+	"Sweet 16_Utah_5" -> "Sweet 16_winner_Utah"
+	"Sweet 16_winner_Utah" -> "Round of 32_Utah_5"
+	"Sweet 16_Texas Tech_3" [label="(3) Texas Tech
+[0.497]" fillcolor=white]
+	"Sweet 16_Arizona_2" [label="(2) Arizona
+[0.503]" fillcolor=lightgreen]
+	"Sweet 16_winner_Arizona" [label="" style=invis]
+	"Sweet 16_Texas Tech_3" -> "Sweet 16_winner_Arizona"
+	"Sweet 16_Arizona_2" -> "Sweet 16_winner_Arizona"
+	"Sweet 16_winner_Arizona" -> "Round of 32_Arizona_2"
+	"Sweet 16_Duke_1" [label="(1) Duke
+[0.519]" fillcolor=white]
+	"Sweet 16_Virginia_5" [label="(5) Virginia
+[0.481]" fillcolor=lightgreen]
+	"Sweet 16_winner_Virginia" [label="" style=invis]
+	"Sweet 16_Duke_1" -> "Sweet 16_winner_Virginia"
+	"Sweet 16_Virginia_5" -> "Sweet 16_winner_Virginia"
+	"Sweet 16_winner_Virginia" -> "Round of 32_Virginia_5"
+	"Sweet 16_Tennessee_11" [label="(11) Tennessee
+[0.467]" fillcolor=white]
+	"Sweet 16_Purdue_2" [label="(2) Purdue
+[0.533]" fillcolor=lightgreen]
+	"Sweet 16_winner_Purdue" [label="" style=invis]
+	"Sweet 16_Tennessee_11" -> "Sweet 16_winner_Purdue"
+	"Sweet 16_Purdue_2" -> "Sweet 16_winner_Purdue"
+	"Sweet 16_winner_Purdue" -> "Round of 32_Purdue_2"
+	"Sweet 16_St. Bonaventure_9" [label="(9) St. Bonaventure
+[0.515]" fillcolor=lightgreen]
+	"Sweet 16_Hawaii_13" [label="(13) Hawaii
+[0.485]" fillcolor=white]
+	"Sweet 16_winner_St. Bonaventure" [label="" style=invis]
+	"Sweet 16_St. Bonaventure_9" -> "Sweet 16_winner_St. Bonaventure"
+	"Sweet 16_Hawaii_13" -> "Sweet 16_winner_St. Bonaventure"
+	"Sweet 16_winner_St. Bonaventure" -> "Round of 32_St. Bonaventure_9"
+	"Sweet 16_Iowa St._6" [label="(6) Iowa St.
+[0.502]" fillcolor=white]
+	"Sweet 16_Creighton_7" [label="(7) Creighton
+[0.498]" fillcolor=lightgreen]
+	"Sweet 16_winner_Creighton" [label="" style=invis]
+	"Sweet 16_Iowa St._6" -> "Sweet 16_winner_Creighton"
+	"Sweet 16_Creighton_7" -> "Sweet 16_winner_Creighton"
+	"Sweet 16_winner_Creighton" -> "Round of 32_Creighton_7"
+	"Elite 8_Oklahoma St._9" [label="(9) Oklahoma St.
+[0.488]" fillcolor=lightgreen]
+	"Elite 8_SMU_6" [label="(6) SMU
+[0.512]" fillcolor=white]
+	"Elite 8_winner_Oklahoma St." [label="" style=invis]
+	"Elite 8_Oklahoma St._9" -> "Elite 8_winner_Oklahoma St."
+	"Elite 8_SMU_6" -> "Elite 8_winner_Oklahoma St."
+	"Elite 8_winner_Oklahoma St." -> "Round of 32_Oklahoma St._9"
+	"Elite 8_Utah_5" [label="(5) Utah
+[0.489]" fillcolor=white]
+	"Elite 8_Arizona_2" [label="(2) Arizona
+[0.511]" fillcolor=lightgreen]
+	"Elite 8_winner_Arizona" [label="" style=invis]
+	"Elite 8_Utah_5" -> "Elite 8_winner_Arizona"
+	"Elite 8_Arizona_2" -> "Elite 8_winner_Arizona"
+	"Elite 8_winner_Arizona" -> "Round of 32_Arizona_2"
+	"Elite 8_Virginia_5" [label="(5) Virginia
+[0.488]" fillcolor=lightgreen]
+	"Elite 8_Purdue_2" [label="(2) Purdue
+[0.512]" fillcolor=white]
+	"Elite 8_winner_Virginia" [label="" style=invis]
+	"Elite 8_Virginia_5" -> "Elite 8_winner_Virginia"
+	"Elite 8_Purdue_2" -> "Elite 8_winner_Virginia"
+	"Elite 8_winner_Virginia" -> "Round of 32_Virginia_5"
+	"Elite 8_St. Bonaventure_9" [label="(9) St. Bonaventure
+[0.490]" fillcolor=lightgreen]
+	"Elite 8_Creighton_7" [label="(7) Creighton
+[0.510]" fillcolor=white]
+	"Elite 8_winner_St. Bonaventure" [label="" style=invis]
+	"Elite 8_St. Bonaventure_9" -> "Elite 8_winner_St. Bonaventure"
+	"Elite 8_Creighton_7" -> "Elite 8_winner_St. Bonaventure"
+	"Elite 8_winner_St. Bonaventure" -> "Round of 32_St. Bonaventure_9"
+	"Final Four_Oklahoma St._9" [label="(9) Oklahoma St.
+[0.472]" fillcolor=white]
+	"Final Four_Arizona_2" [label="(2) Arizona
+[0.528]" fillcolor=lightgreen]
+	"Final Four_winner_Arizona" [label="" style=invis]
+	"Final Four_Oklahoma St._9" -> "Final Four_winner_Arizona"
+	"Final Four_Arizona_2" -> "Final Four_winner_Arizona"
+	"Final Four_winner_Arizona" -> "Round of 32_Arizona_2"
+	"Final Four_Virginia_5" [label="(5) Virginia
+[0.517]" fillcolor=white]
+	"Final Four_St. Bonaventure_9" [label="(9) St. Bonaventure
+[0.483]" fillcolor=lightgreen]
+	"Final Four_winner_St. Bonaventure" [label="" style=invis]
+	"Final Four_Virginia_5" -> "Final Four_winner_St. Bonaventure"
+	"Final Four_St. Bonaventure_9" -> "Final Four_winner_St. Bonaventure"
+	"Final Four_winner_St. Bonaventure" -> "Round of 32_St. Bonaventure_9"
+	Championship_Arizona_2 [label="(2) Arizona
+[0.530]" fillcolor=lightgreen]
+	"Championship_St. Bonaventure_9" [label="(9) St. Bonaventure
+[0.470]" fillcolor=white]
+	Championship_winner_Arizona [label="" style=invis]
+	Championship_Arizona_2 -> Championship_winner_Arizona
+	"Championship_St. Bonaventure_9" -> Championship_winner_Arizona
+	{
+		rank=same
+		"Round of 64_Gonzaga_1"
+		"Round of 64_Penn_16"
+		"Round of 64_Pittsburgh_8"
+		"Round of 64_Oklahoma St._9"
+		"Round of 64_Houston_5"
+		"Round of 64_Harvard_12"
+		"Round of 64_Louisville_4"
+		"Round of 64_Vermont_13"
+		"Round of 64_SMU_6"
+		"Round of 64_Wichita St._11"
+		"Round of 64_Florida_3"
+		"Round of 64_Stephen F. Austin_14"
+		"Round of 64_Saint Mary's_7"
+		"Round of 64_Ohio St._10"
+		"Round of 64_Villanova_2"
+		"Round of 64_Georgia St._15"
+		"Round of 64_Kentucky_1"
+		"Round of 64_Southern_16"
+		"Round of 64_Loyola Chicago_8"
+		"Round of 64_UCF_9"
+		"Round of 64_Utah_5"
+		"Round of 64_Oregon_12"
+		"Round of 64_Connecticut_4"
+		"Round of 64_La Salle_13"
+		"Round of 64_Cincinnati_6"
+		"Round of 64_Vanderbilt_11"
+		"Round of 64_Texas Tech_3"
+		"Round of 64_Colgate_14"
+		"Round of 64_Michigan_7"
+		"Round of 64_Marquette_10"
+		"Round of 64_Arizona_2"
+		"Round of 64_Cal St. Bakersfield_15"
+		"Round of 64_Duke_1"
+		"Round of 64_Drexel_16"
+		"Round of 64_Wisconsin_8"
+		"Round of 64_Florida Atlantic_9"
+		"Round of 64_Virginia_5"
+		"Round of 64_Middle Tennessee_12"
+		"Round of 64_Syracuse_4"
+		"Round of 64_Iona_13"
+		"Round of 64_San Diego St._6"
+		"Round of 64_Tennessee_11"
+		"Round of 64_Notre Dame_3"
+		"Round of 64_Davidson_14"
+		"Round of 64_Michigan St._7"
+		"Round of 64_Butler_10"
+		"Round of 64_Purdue_2"
+		"Round of 64_Grand Canyon_15"
+		"Round of 64_Indiana_1"
+		"Round of 64_North Carolina Central_16"
+		"Round of 64_Memphis_8"
+		"Round of 64_St. Bonaventure_9"
+		"Round of 64_Auburn_5"
+		"Round of 64_Murray St._12"
+		"Round of 64_West Virginia_4"
+		"Round of 64_Hawaii_13"
+		"Round of 64_Iowa St._6"
+		"Round of 64_Iowa_11"
+		"Round of 64_UCLA_3"
+		"Round of 64_Valparaiso_14"
+		"Round of 64_Creighton_7"
+		"Round of 64_Utah St._10"
+		"Round of 64_Texas_2"
+		"Round of 64_Florida Gulf Coast_15"
+		"Round of 32_Penn_16"
+		"Round of 32_Oklahoma St._9"
+		"Round of 32_Harvard_12"
+		"Round of 32_Vermont_13"
+		"Round of 32_SMU_6"
+		"Round of 32_Florida_3"
+		"Round of 32_Ohio St._10"
+		"Round of 32_Villanova_2"
+		"Round of 32_Southern_16"
+		"Round of 32_UCF_9"
+		"Round of 32_Utah_5"
+		"Round of 32_Connecticut_4"
+		"Round of 32_Vanderbilt_11"
+		"Round of 32_Texas Tech_3"
+		"Round of 32_Michigan_7"
+		"Round of 32_Arizona_2"
+		"Round of 32_Duke_1"
+		"Round of 32_Wisconsin_8"
+		"Round of 32_Virginia_5"
+		"Round of 32_Iona_13"
+		"Round of 32_Tennessee_11"
+		"Round of 32_Davidson_14"
+		"Round of 32_Michigan St._7"
+		"Round of 32_Purdue_2"
+		"Round of 32_Indiana_1"
+		"Round of 32_St. Bonaventure_9"
+		"Round of 32_Auburn_5"
+		"Round of 32_Hawaii_13"
+		"Round of 32_Iowa St._6"
+		"Round of 32_Valparaiso_14"
+		"Round of 32_Creighton_7"
+		"Round of 32_Texas_2"
+		"Sweet 16_Oklahoma St._9"
+		"Sweet 16_Vermont_13"
+		"Sweet 16_SMU_6"
+		"Sweet 16_Ohio St._10"
+		"Sweet 16_UCF_9"
+		"Sweet 16_Utah_5"
+		"Sweet 16_Texas Tech_3"
+		"Sweet 16_Arizona_2"
+		"Sweet 16_Duke_1"
+		"Sweet 16_Virginia_5"
+		"Sweet 16_Tennessee_11"
+		"Sweet 16_Purdue_2"
+		"Sweet 16_St. Bonaventure_9"
+		"Sweet 16_Hawaii_13"
+		"Sweet 16_Iowa St._6"
+		"Sweet 16_Creighton_7"
+		"Elite 8_Oklahoma St._9"
+		"Elite 8_SMU_6"
+		"Elite 8_Utah_5"
+		"Elite 8_Arizona_2"
+		"Elite 8_Virginia_5"
+		"Elite 8_Purdue_2"
+		"Elite 8_St. Bonaventure_9"
+		"Elite 8_Creighton_7"
+		"Final Four_Oklahoma St._9"
+		"Final Four_Arizona_2"
+		"Final Four_Virginia_5"
+		"Final Four_St. Bonaventure_9"
+		Championship_Arizona_2
+		"Championship_St. Bonaventure_9"
+	}
+}
